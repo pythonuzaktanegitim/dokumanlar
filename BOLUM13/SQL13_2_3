@@ -1,0 +1,25 @@
+SELECT * FROM lokasyonlar order by ulke_id desc,bolge desc;
+/*
+ASC a dan z ye 
+DESC z den a ya
+*/
+SELECT *
+  FROM (
+           SELECT dep.departman_adi,
+                  (
+                      SELECT count( * ) 
+                        FROM personeller AS per
+                       WHERE per.departman_id = dep.departman_id
+                  )
+                  AS persay
+             FROM departmanlar AS dep
+       )
+ ORDER BY persay DESC;
+
+SELECT count( * ) AS say,
+       departman_id
+  FROM personeller AS per
+ GROUP BY per.departman_id HAVING per.departman_id <> 4
+ ORDER BY say DESC;
+
+

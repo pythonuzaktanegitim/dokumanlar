@@ -1,0 +1,6 @@
+-- INSERT INTO TABLO_ISMI (SUTUN_1,SUTUN_2) VALUES ('DEGER_1',DEGER_2)
+INSERT INTO departmanlar (departman_adi,lokasyon_id) VALUES ('İş Zekası',2800);
+
+INSERT INTO isler (is_unvan,min_maas,max_maas) VALUES 
+('Veri Analisti',10000,20000),
+('Yapay Zeka Yazılımcısı',10000,20000)

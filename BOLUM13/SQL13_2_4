@@ -1,0 +1,23 @@
+
+SELECT 
+per.adi || ' ' || per.soyadi as "ADI SOYADI",
+dep.departman_adi as "DEPARTMAN ADI",
+isl.is_unvan as "UNVAN",
+per.maas as "MAAŞ"
+FROM personeller AS per
+INNER JOIN departmanlar AS dep 
+ON dep.departman_id = per.departman_id
+INNER JOIN isler as isl
+ON isl.is_id = per.is_id;
+
+
+
+SELECT 
+per.adi || ' ' || per.soyadi as "ADI SOYADI",
+yak.adi || ' ' || yak.soyadi as "YAKIN ADI SOYADI",yak.yakin_id
+FROM personeller AS per
+LEFT JOIN yakinlar as yak
+ON yak.personel_id = per.personel_id 
+where yak.yakin_id is null
+
+

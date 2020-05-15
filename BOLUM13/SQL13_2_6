@@ -1,0 +1,5 @@
+-- UPDATE TABLO İSMİ SET sutun_1 = değer,sutun_2 = değer WHERE -ŞARTLAR--
+--21 12
+SELECT * FROM personeller AS per WHERE per.personel_id = 102;
+
+UPDATE personeller  SET is_id = 21,departman_id = 12 WHERE personel_id = 102;

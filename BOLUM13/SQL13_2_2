@@ -1,0 +1,26 @@
+/*
+=
+!= ya da <>
+<,>,<=,>=
+is,in
+not,and,or
+BETWEEN altsinir AND üstsinir
+LIKE % _ ya da ? */
+
+SELECT * FROM personeller as per WHERE per.adi LIKE 'A%';
+SELECT * FROM personeller as per WHERE per.maas BETWEEN 3000 AND 6000;
+SELECT * FROM personeller as per WHERE per.mudur_id IS null;
+SELECT * FROM personeller as per WHERE per.mudur_id IS NOT null;
+SELECT * FROM personeller as per WHERE per.departman_id IN (9,6,5,4);
+SELECT *
+  FROM personeller AS per
+ WHERE per.departman_id  IN (
+           SELECT dep.departman_id
+             FROM departmanlar AS dep
+            WHERE lokasyon_id > 2000
+       );
+   
+SELECT * FROM personeller AS per WHERE lower(per.adi) LIKE 'a%' AND  LOWER(per.soyadi) LIKE 'c%n';
+
+SELECT * FROM personeller AS per WHERE (per.is_id = 4 or per.departman_id = 6)
+OR (lower(per.adi) LIKE 'a%' AND  LOWER(per.soyadi) LIKE 'c%n');

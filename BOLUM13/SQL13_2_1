@@ -1,0 +1,11 @@
+--SELECT sutun_adları FROM tablo_adi
+SELECT * FROM bolgeler;
+--BİRDEN FAZLA SÜTUN
+SELECT departman_id,departman_adi FROM departmanlar;
+--DISTINCT
+SELECT DISTINCT departman_id FROM personeller;
+--COUNT,SUM,MAX,MIN,AVG
+SELECT COUNT(*) FROM personeller;
+--
+SELECT per.adi || ' ' ||per.soyadi  AS "ADI SOYADI" FROM personeller as per;
+
