@@ -1,0 +1,17 @@
+<h1>{{soru.soru_cumlesi}}</h1>
+    {% if hata_mesaji %}<p><strong>{{hata_mesaji}}</strong></p>{% endif %}
+<form  action="{% url 'anketler:cevap' soru.id %}" method="post">
+    {% csrf_token %}
+    {% for secenek in soru.secenek_set.all %}
+        <input type="radio" name="secenek" id="secenek{{forloop.counter}}" value="{{secenek.id}}">
+        <label for="secenek{{forloop.counter}}">{{secenek.sec_metin}}</label><br>
+    {% endfor %}
+    <input type="submit" value="Cevapla">
+</form>
+
+
+{% comment %} <ul>
+{% for secenek in soru.secenek_set.all %}
+<li>{{secenek.sec_metin}}</li>
+{% endfor %}
+</ul> {% endcomment %}

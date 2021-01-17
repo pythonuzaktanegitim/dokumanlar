@@ -1,0 +1,15 @@
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'anketler/style.css' %}" >
+
+{% if son_zaman_sorular %}
+<ul>
+{% for soru in son_zaman_sorular %}
+<li><a href="/anketler/{{soru.id}}/">{{soru.soru_cumlesi}}</a></li>
+<li><a href="{% url 'anketler:detay' soru.id %}" >{{soru.soru_cumlesi}}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+<p> Soru Bulunamadı</p>
+{% endif %}

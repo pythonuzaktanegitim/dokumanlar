@@ -1,0 +1,10 @@
+{% extends '../ana.html' %}
+
+{% block icerik_kisim %}
+<h1>Yazar Ekle</h1>
+<form method="post">
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit" >Kaydet</button>
+</form>
+{% endblock  %}

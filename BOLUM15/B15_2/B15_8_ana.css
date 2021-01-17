@@ -1,0 +1,25 @@
+/*secilmis tag {
+    ozellik : deger;
+}*/
+
+
+body {
+    background : url("http://uzaktanegitim.com/assets/img/logo.png");
+    background-repeat:no-repeat;
+}
+
+div {
+    background:green;
+    border-color: blue;
+    border-width: 10px;
+    border-style: dashed;
+}
+
+p {
+    color: honeydew;
+}
+
+span{
+   background: red;
+   color: salmon;
+}

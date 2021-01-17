@@ -1,0 +1,18 @@
+{% extends '../ana.html' %}
+
+{% block icerik_kisim %}
+    <h1>Yazar Listesi</h1>
+    {% if yazarlar %}
+        <ul>
+        {% for yazar in yazarlar %}
+            <li> <a href="{% url 'yazar_detay' pk=yazar.pk %}" >            
+            {{yazar.adi}} - {{yazar.soyadi}}
+            </a>
+            </li>
+        {% endfor %}
+        <li> <a href="{% url  'yeni_yazar' %}">Yeni Yazar Ekle</a></li>
+        </ul>
+    {% else %}
+        <h4> Kitap Bulunamadı</h4>
+    {% endif %}
+{% endblock  %}

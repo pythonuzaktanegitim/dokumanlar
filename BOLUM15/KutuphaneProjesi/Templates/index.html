@@ -1,0 +1,17 @@
+{% extends 'ana.html' %}
+{% block baslik %}
+ Kütüphane Ana Sayfa
+{% endblock %}
+
+
+{% block icerik_kisim %}
+    <h1>Kütüphane Sayfası</h1>
+    <p> Kütüphanemize Hoşgeldiniz</p>
+    <p> Kütüphane Kayıtlarımız</p>
+    <ul>
+    <li><strong>Kitaplar:</strong> {{toplam_kitap}}</li>
+    <li><strong>Giris Sayısı:</strong> {{giris_sayisi}}</li>
+    <li><strong>Ulaşılabilir Kitap:</strong> {{ulasilabilir_kitap}}</li>
+    <li><strong>Yazar:</strong> {{yazar_sayisi}}</li>
+    </ul>
+{% endblock  %}

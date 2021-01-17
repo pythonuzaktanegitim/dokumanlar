@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soru Listesi</title>
+</head>
+<body>
+{% for soru in sorular %}
+<h1> Soru Cümlesi : {{soru.soru_cumlesi}} </h1>
+<p> Zaman : {{soru.yayim_zaman}}</p>
+{% endfor %}
+</body>
+</html>

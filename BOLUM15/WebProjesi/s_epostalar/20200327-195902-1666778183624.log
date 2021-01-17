@@ -1,0 +1,26 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?q?127=2E0=2E0=2E1=3A8000_sitesinde_parola_s=C4=B1f=C4=B1rlama?=
+From: webmaster@localhost
+To: admin@deneme.com
+Date: Fri, 27 Mar 2020 16:59:02 -0000
+Message-ID: <158532834243.10936.11858866859633082024@DESKTOP-J2PHCO3>
+
+
+Bu e-postayı alıyorsunuz çünkü 127.0.0.1:8000 sitesindeki kullanıcı hesabınız için bir parola sıfırlama istediniz.
+
+Lütfen şurada belirtilen sayfaya gidin ve yeni bir parola seçin:
+
+http://127.0.0.1:8000/accounts/reset/NA/5f5-59f5d250bce538fa7cf1/
+
+Unutma ihtimalinize karşı, kullanıcı adınız: deneme
+
+Sitemizi kullandığınız için teşekkürler!
+
+127.0.0.1:8000 ekibi
+
+
+
+-------------------------------------------------------------------------------

@@ -1,0 +1,17 @@
+{% extends '../ana.html' %}
+
+{% block icerik_kisim %}
+    <h1>Kitap Listesi</h1>
+    {% if kitap_listesi %}
+        <ul>
+        {% for kitap in kitap_listesi %}
+            <li> <a href="{% url 'kitap_detay' pk=kitap.pk %}" >            
+            {{kitap.baslik}} - {{kitap.yazar}}
+            </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <h4> Kitap Bulunamadı</h4>
+    {% endif %}
+{% endblock  %}

@@ -1,0 +1,23 @@
+/* Açıklama Satırı ilk css */
+/*
+secilmis tag {
+    ozellik : deger;
+}*/
+
+h1 {
+    color: blue;
+}
+
+
+
+li {
+    color:rgb(82,171,71)
+}
+
+p{
+    color: #DE51E0;
+}
+
+h4 {
+    color: rgba(0, 41, 255, 0.30);
+}

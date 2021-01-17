@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formlar 2</title>
+</head>
+<body>
+<h1>Geri Bildirim Formu</h1>
+<form method="get">
+    <h3>Hizmetten Memnun kaldınız mı?</h3>
+    <label for="Evet">Evet</label>
+    <input type="radio" id="Evet" name="Memnun" value="1">
+    <label for="Hayır">Hayır</label>
+    <input type="radio" id="Hayır" name="Memnun" value="0">
+
+    <h3>Puanlama?</h3>
+    <select name="Yıldızlar">
+        <option value="Çok İyi">3</option>
+        <option value="İyi">2</option>
+        <option value="Eh işte">1</option>
+    </select>
+
+    <h3>Diğer</h3>
+    <textarea name="fikrim" rows="4" cols="40"></textarea>
+    <input type="submit" name="" value="Gönder">
+</form>
+</body>
+</html>

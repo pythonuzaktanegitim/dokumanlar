@@ -1,0 +1,33 @@
+/*secilmis tag {
+    ozellik : deger;
+}*/
+
+
+.ilkDiv {
+    color:red;
+    background-color: sandybrown;
+}
+
+.ikinciDiv {
+    color:green;
+    background-color: sandybrown;
+}
+
+#tekbasina {
+    color: hotpink;
+    background-color: indigo;
+    text-decoration: line-through;
+}
+
+h4 ul {
+    border: 4px dotted purple;
+}
+
+li{ 
+    color:seagreen;
+
+}
+
+h4 ul li a{
+    border: 6px dotted purple;
+}

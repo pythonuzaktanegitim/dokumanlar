@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "C:\\Anaconda3\\envs\\Django\\python.exe",
+    "sqltools.connections": [
+        {
+            "database": "D:\\EGITIM\\BOLUM15\\WebProjesi\\db.sqlite3",
+            "dialect": "SQLite",
+            "name": "DjangoEgitim"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

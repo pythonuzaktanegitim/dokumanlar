@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formlar 2</title>
+</head>
+<body>
+
+{% if user.is_authenticated %}
+Merhaba {{user.username}}<br>
+<a href="{% url 'logout' %}"> Çıkış </a> 
+<a href="{% url 'password_reset' %}"> Şifremi Sıfırla </a> 
+{% else %}
+<a href="{% url 'login' %}"> Giriş Yap </a>/
+<a href="{% url 'signup' %}"> Üye Ol </a>/
+
+{% endif %}
+<br>
+
+<h1> Bu Benim Ana Sayfam </h1>
+<img src="{% static 'logo.png' %}" alt="logo">
+
+
+</body>
+</html>

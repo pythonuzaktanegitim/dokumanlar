@@ -1,0 +1,9 @@
+<h1>{{soru.soru_cumlesi}}</h1>
+<ul>
+{% for secenek in  soru.secenek_set.all %}
+<li>{{secenek.sec_metin}}--{{secenek.cevap}} Cevap {{secenek.cevap | pluralize}}
+</li>
+{% endfor %}
+</ul>
+
+<a href="{url 'anketler:detay' soru.id %}" >Tekrar Cevapla ? </a>

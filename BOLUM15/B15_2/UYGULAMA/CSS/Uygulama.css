@@ -1,0 +1,31 @@
+body{
+    color:#FCFCFC;
+    font-family: 'Baloo Da 2', cursive;
+    background-color: #5465AC;
+    text-align: center;
+    border:40px solid #FB963F;
+    border-top:0px;
+    margin:0px;
+}
+
+p {
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+#but1 {
+    background-color: #FB963F;
+    height: 80px;
+    width: 150px;
+    margin:4px;
+    margin-top: 12px;
+    font-size: 1em;
+    border-radius: 25px;
+}
